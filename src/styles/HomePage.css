@@ -1,0 +1,11 @@
+.home {
+    height: 100vh; /* Adjust height as needed */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color for visibility against the background */
+  }
+  

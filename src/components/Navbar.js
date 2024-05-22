@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';  
 import logoImage from '../images/Logo.png';
 
@@ -10,11 +10,11 @@ function Navbar() {
           <Link to="/"><img src={logoImage} alt="Renaissance Sculptures Logo"/></Link>
         </div>
         <ul className="navbar-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/gallery">Gallery</Link></li>
-          <li><Link to="/design">Design</Link></li>
-          <li><Link to="/theory">Theory</Link></li>
-          <li><Link to="/netart">Net Art</Link></li>
+        <li><NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : ''}>Home</NavLink></li>
+        <li><NavLink to="/gallery" className={({ isActive }) => isActive ? 'active-link' : ''}>Gallery</NavLink></li>
+        <li><NavLink to="/design" className={({ isActive }) => isActive ? 'active-link' : ''}>Design</NavLink></li>
+        <li><NavLink to="/theory" className={({ isActive }) => isActive ? 'active-link' : ''}>Theory</NavLink></li>
+        <li><NavLink to="/netart" className={({ isActive }) => isActive ? 'active-link' : ''}>Net Art</NavLink></li>
         </ul>
       </nav>
     );
