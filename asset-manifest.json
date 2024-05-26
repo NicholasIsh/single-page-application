@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/single-page-application/static/css/main.85dc5286.css",
-    "main.js": "/single-page-application/static/js/main.5531f24e.js",
-    "static/js/453.04c9f7a4.chunk.js": "/single-page-application/static/js/453.04c9f7a4.chunk.js",
-    "static/media/Homepage.png": "/single-page-application/static/media/Homepage.51956fe67d307992620e.png",
-    "static/media/GalleryBackground.jpg": "/single-page-application/static/media/GalleryBackground.16cc37012b49a1bb86ce.jpg",
-    "static/media/David.jpg": "/single-page-application/static/media/David.cb828cfc2667a0b8ee84.jpg",
-    "static/media/Perseus.jpg": "/single-page-application/static/media/Perseus.b296de219d415ad0900b.jpg",
-    "static/media/HerculesAndCacus.jpg": "/single-page-application/static/media/HerculesAndCacus.d33420d2a5db11ef5515.jpg",
-    "static/media/Abduction.jpg": "/single-page-application/static/media/Abduction.6a24d4637918b009139c.jpg",
-    "static/media/Madona.png": "/single-page-application/static/media/Madona.c868af82c27a208f40d2.png",
-    "static/media/Pieta.jpg": "/single-page-application/static/media/Pieta.b969fc705ae7185a86ad.jpg",
-    "static/media/TheoryWireframe.png": "/single-page-application/static/media/TheoryWireframe.bd4c89c1d862bc24766f.png",
-    "static/media/TheDesposition.jpg": "/single-page-application/static/media/TheDesposition.c44abffd599b897bf2e4.jpg",
-    "static/media/GalleryWireframe.png": "/single-page-application/static/media/GalleryWireframe.baf665a57dc1e3e662b6.png",
-    "static/media/HomepageWireframe.png": "/single-page-application/static/media/HomepageWireframe.900431f6f4e8959ebf8b.png",
-    "static/media/DesignWireframe.png": "/single-page-application/static/media/DesignWireframe.bd0bea614197fb258324.png",
-    "static/media/BlogWireframe.png": "/single-page-application/static/media/BlogWireframe.658c531ef59d7e463de5.png",
-    "index.html": "/single-page-application/index.html",
-    "main.85dc5286.css.map": "/single-page-application/static/css/main.85dc5286.css.map",
-    "main.5531f24e.js.map": "/single-page-application/static/js/main.5531f24e.js.map",
-    "453.04c9f7a4.chunk.js.map": "/single-page-application/static/js/453.04c9f7a4.chunk.js.map"
+    "main.css": "/static/css/main.af78bbcc.css",
+    "main.js": "/static/js/main.34490543.js",
+    "static/js/453.04c9f7a4.chunk.js": "/static/js/453.04c9f7a4.chunk.js",
+    "static/media/Homepage.png": "/static/media/Homepage.51956fe67d307992620e.png",
+    "static/media/GalleryBackground.jpg": "/static/media/GalleryBackground.16cc37012b49a1bb86ce.jpg",
+    "static/media/David.jpg": "/static/media/David.cb828cfc2667a0b8ee84.jpg",
+    "static/media/Perseus.jpg": "/static/media/Perseus.b296de219d415ad0900b.jpg",
+    "static/media/HerculesAndCacus.jpg": "/static/media/HerculesAndCacus.d33420d2a5db11ef5515.jpg",
+    "static/media/Abduction.jpg": "/static/media/Abduction.6a24d4637918b009139c.jpg",
+    "static/media/Madona.png": "/static/media/Madona.c868af82c27a208f40d2.png",
+    "static/media/Pieta.jpg": "/static/media/Pieta.b969fc705ae7185a86ad.jpg",
+    "static/media/TheoryWireframe.png": "/static/media/TheoryWireframe.bd4c89c1d862bc24766f.png",
+    "static/media/TheDesposition.jpg": "/static/media/TheDesposition.c44abffd599b897bf2e4.jpg",
+    "static/media/GalleryWireframe.png": "/static/media/GalleryWireframe.baf665a57dc1e3e662b6.png",
+    "static/media/HomepageWireframe.png": "/static/media/HomepageWireframe.900431f6f4e8959ebf8b.png",
+    "static/media/DesignWireframe.png": "/static/media/DesignWireframe.bd0bea614197fb258324.png",
+    "static/media/BlogWireframe.png": "/static/media/BlogWireframe.658c531ef59d7e463de5.png",
+    "index.html": "/index.html",
+    "main.af78bbcc.css.map": "/static/css/main.af78bbcc.css.map",
+    "main.34490543.js.map": "/static/js/main.34490543.js.map",
+    "453.04c9f7a4.chunk.js.map": "/static/js/453.04c9f7a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85dc5286.css",
-    "static/js/main.5531f24e.js"
+    "static/css/main.af78bbcc.css",
+    "static/js/main.34490543.js"
   ]
 }
