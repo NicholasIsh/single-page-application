@@ -1,0 +1,55 @@
+.blog-page {
+    height: auto; /* Changed to auto to accommodate variable content length */
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the background image */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Adjusted for better alignment with multiple posts */
+    color: #bbbbbb;
+    padding: 8% 10%;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #000000, #111111);
+  }
+  
+  .blog-page h1, .wireframe-section h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+  
+.blog-post, .wireframe-section {
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+  
+.blog-post h2, .wireframe-container h3 {
+    color: #bbbbbb;
+    text-align: left;
+    font-size: 32px; /* Adjusted for visibility */
+}
+
+  
+  .blog-post p {
+    text-align: justify;
+  }
+
+  .wireframe-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.wireframe-image {
+    max-width: 60%; /* Adjust based on your layout preference */
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5); /* Optional: adds depth to images */
+}
+.wireframe-container {
+    width: 100%; /* Adjust based on layout preference */
+    margin-bottom: 20px; /* Space between wireframe containers */
+}
+  

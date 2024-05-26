@@ -1,14 +1,22 @@
 import React from 'react';
-import '../styles/DesignPage.css';  
+import '../styles/BlogPage.css';  
 
-function BlogPage() {
+
+function DesignPage({ blogPosts }) {
     return (
         <div className="blog-page">
-            <n1>Placeholder</n1>
-
+            <h1>Blog</h1>
+            {blogPosts.map((post, index) => (
+                <div key={index} className="blog-post">
+                    <h2>{post.title}</h2>
+                    {post.content.split('\n').map((paragraph, idx) => (
+                        <p key={idx}>{paragraph}</p>
+                    ))}
+                </div>
+            ))}
         </div>
     )
 
 }
 
-export default BlogPage;
+export default DesignPage;

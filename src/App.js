@@ -9,6 +9,9 @@ import DesignPage from './components/DesignPage';
 import BlogPage from './components/BlogPage';
 import './App.css';
 import sculptures from './data/sculptures';  // Importing sculptures data
+import blogs from './data/blogs';
+import designContent from './data/designContent';
+import wireframes from './data/wireframes';
 
 function App() {
   return (
@@ -20,8 +23,8 @@ function App() {
           <Route path="/gallery" element={<GalleryPage sculptures={sculptures} />} />
           <Route path="/theory" element={<TheoryPage />} />
           <Route path="/netArt" element={<NetArtPage />} />
-          <Route path="/design" element={<DesignPage />} />
-          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/design" element={<DesignPage designContent={designContent} wireframes={wireframes}/>} />
+          <Route path="/blog" element={<BlogPage blogPosts={blogs}/>} />
         </Routes>
       </div>
     </Router>

@@ -3,7 +3,7 @@ import PietaImage from '../images/Pieta.jpg';
 import PerseusImage from '../images/Perseus.jpg';
 import AbductionImage from '../images/Abduction.jpg';
 import MadonaImage from '../images/Madona.png';
-import HerculesAndCactusImage from '../images/HerculesAndCacus.jpg';
+import HerculesAndCacusImage from '../images/HerculesAndCacus.jpg';
 import TheDespositionImage from '../images/TheDesposition.jpg';
 
 const sculptures = [
@@ -49,8 +49,8 @@ const sculptures = [
   },
   {
     id: 6,
-    name: 'Hercules and Cactus',
-    image: HerculesAndCactusImage,
+    name: 'Hercules and Cacus',
+    image: HerculesAndCacusImage,
     artist:'Baccio Bandinelli',
     year:'1534',
     description: 'The "Hercules and Cacus" statue, a powerful marble sculpture by Baccio Bandinelli, was completed in 1534 and is prominently displayed in the Piazza della Signoria in Florence, Italy. This artwork serves as a grand symbol of strength and victorious conquest, representing the mythological tale of Hercules defeating the fire-breathing giant, Cacus. \nThe statue is notable for its monumental size and dynamic composition, illustrating the moment after Hercules has slain Cacus, who had terrorized the Aventine Hill in Rome. Hercules stands triumphant, his muscular body captured in a pose that exudes both strength and motion. His left hand clutches the hair of the defeated Cacus, whose body lies at Hercules\' feet, while his right hand holds a club, resting over his shoulder, signaling the end of the conflict. \nThe figures are sculpted with exaggerated muscular detail, typical of Bandinelli’s style and reflective of the Mannerist period, which favored complexity and artificiality over the harmonious proportions of the High Renaissance. Hercules’ physique is almost hyper-masculine, with bulging muscles and a tense posture that conveys his physical power and heroic action. In contrast, Cacus is depicted in a twisted, contorted position, his body expressive of the agony of his defeat. \nThe faces of the characters are equally expressive. Hercules’ expression is stern and resolute, a depiction of rightful might and determination, while Cacus\' features are twisted in pain, his open mouth seemingly issuing a silent scream. This contrast not only highlights the moral victory of good over evil but also adds a dramatic flair to the narrative being depicted. \n"Hercules and Cacus" is crafted from a single block of marble, a testament to Bandinelli’s skill and the technical challenges of such a large and complex sculpture. The texture of the skin, the detailed anatomy, and the intricate play of muscles and sinews are rendered with meticulous care, enhancing the lifelike quality and the dramatic impact of the scene. \nStanding in a public square, the statue not only serves as a masterful piece of art but also as a political symbol of the Medici’s power and control over Florence, akin to Hercules\' triumph over chaos and disorder. It remains a significant cultural and historical landmark, admired for its artistic mastery and its emblematic significance in the heart of Florence.'

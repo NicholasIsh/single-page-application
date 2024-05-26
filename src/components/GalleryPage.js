@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
 import '../styles/GalleryPage.css';
-import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'; // If these are still needed
+import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'; 
 
 function GalleryPage({ sculptures }) {
     const [index, setIndex] = useState(1);
     const [fade, setFade] = useState(false);
-    const detailsRef = useRef(null);  // Reference to the details section
+    const detailsRef = useRef(null);  
 
     const changeImage = (newIndex) => {
         setFade(true);

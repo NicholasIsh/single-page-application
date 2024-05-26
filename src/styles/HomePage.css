@@ -1,6 +1,6 @@
 .home {
     height: 100vh; 
-    background-image: url('../images/Homepage6.png');
+    background-image: url('../images/Homepage.png');
     background-size: cover;
     background-position: center; 
     display: flex;
@@ -22,7 +22,6 @@
     .home{
       padding: 80% 10%;
     }
-
   }
 
   .view-gallery {
@@ -32,7 +31,7 @@
   
   .gallery-link {
     font-size: 20px;
-    color: white;  /* Example color: blue */
+    color: white;  
     text-decoration: none;  /* Removes underline */
     position: relative;  /* Needed for absolute positioning of pseudo-elements */
     display: inline-block;  /* Ensures the width is only as wide as the text */
