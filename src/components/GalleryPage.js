@@ -1,20 +1,62 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import '../styles/GalleryPage.css';
-import { Link } from 'react-router-dom';
+import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'; // If these are still needed
 
 function GalleryPage({ sculptures }) {
-  return (
-    <div className="gallery">
-      {sculptures.map(sculpture => (
-        <div key={sculpture.id} className="sculpture-item">
-          <Link to={`/sculpture/${sculpture.id}`}>
-            <img src={sculpture.image} alt={sculpture.name} />
-            <h3>{sculpture.name}</h3>
-          </Link>
+    const [index, setIndex] = useState(1);
+    const [fade, setFade] = useState(false);
+    const detailsRef = useRef(null);  // Reference to the details section
+
+    const changeImage = (newIndex) => {
+        setFade(true);
+        setTimeout(() => {
+            setIndex(newIndex);
+            setFade(false);
+        }, 500);
+    };
+
+    const nextImage = () => changeImage((index + 1) % sculptures.length);
+    const prevImage = () => changeImage((index - 1 + sculptures.length) % sculptures.length);
+
+    const scrollToDetails = () => {
+        detailsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    const currentSculpture = sculptures[index];
+    const descriptionParagraphs = currentSculpture.description.split('\n');
+
+    return (
+        <div className="gallery-container">
+            <div className="gallery-header">
+                <h1 className="gallery-title">Gallery</h1>
+            </div>
+            <div className="gallery">
+                <button onClick={prevImage} className="button-icon"><SlArrowLeft /></button>
+                <div className={`sculpture-item small ${fade ? 'fading' : ''}`}>
+                    <img src={sculptures[(index - 1 + sculptures.length) % sculptures.length].image} alt={sculptures[(index - 1 + sculptures.length) % sculptures.length].name} />
+                </div>
+                <div className={`sculpture-item large ${fade ? 'fading' : ''}`} onClick={scrollToDetails}>
+                    <img src={sculptures[index].image} alt={sculptures[index].name} />
+                    <h3>{sculptures[index].name}</h3>
+                </div>
+                <div className={`sculpture-item small ${fade ? 'fading' : ''}`}>
+                    <img src={sculptures[(index + 1) % sculptures.length].image} alt={sculptures[(index + 1) % sculptures.length].name} />
+                </div>
+                <button onClick={nextImage} className="button-icon"><SlArrowRight /></button>
+            </div>
+            <div className="sculpture-details" ref={detailsRef}>
+                <div className="sculpture-info">
+                    <h2>{currentSculpture.name}</h2>
+                    {descriptionParagraphs.map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                    ))}
+                    <p><strong>Artist:</strong> {currentSculpture.artist}</p>
+                    <p><strong>Year:</strong> {currentSculpture.year}</p>
+                </div>
+                <img src={currentSculpture.image} alt={currentSculpture.name} className="full-size-image" />
+            </div>
         </div>
-      ))}
-    </div>
-  );
+    );
 }
 
 export default GalleryPage;

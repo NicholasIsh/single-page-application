@@ -2,11 +2,13 @@
     display: flex;
     position: fixed;
     width: 100%;
-    align-items: center;  /* Aligns items vertically in the center */
-    justify-content: flex-start; /* Aligns items horizontally to the start (left) */
+    align-items: center;  
+    justify-content: flex-start; 
     color: black;
     background: linear-gradient(to bottom, rgb(20, 20, 20) 0%, rgba(0, 0, 0, 0) 100%);
     padding: 0 20px;
+    backdrop-filter: blur(5px); /* Apply blur effect to the background */
+    z-index: 1000;
   }
   
   .navbar-logo img {
@@ -23,18 +25,17 @@
   
   .navbar-links li {
     padding: 20px 50px;
-
   }
   
   .navbar-links a {
     text-decoration: none;
-    color: #bbbbbb;  /* Dark grey text */
+    color: #bbbbbb;  
     font-size: 20px;
     font-weight: bold;
   }
   
   .navbar-links a:hover {
-    color: #ffffff;  /* Light blue hover effect */
+    color: #ffffff;  
   }
 
   .active-link {
@@ -55,4 +56,4 @@
    
       }
   }
-  
+ 

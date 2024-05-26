@@ -1,11 +1,55 @@
 .home {
-    height: 100vh; /* Adjust height as needed */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the background image */
+    height: 100vh; 
+    background-image: url('../images/Homepage6.png');
+    background-size: cover;
+    background-position: center; 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    color: white; /* Adjust text color for visibility against the background */
+    color: #bbbbbb; 
+    padding: 5% 10%;
+    background-color: black;
+  }
+
+  .home h1 .home h2, .home p{
+    max-width: 600px;
+    text-align: justify;
+    margin-top: 10px;
   }
   
+  @media (max-width: 550px) {
+    .home{
+      padding: 80% 10%;
+    }
+
+  }
+
+  .view-gallery {
+    text-align: center;
+    margin-top: 20px;  /* Add space above the link */
+  }
+  
+  .gallery-link {
+    font-size: 20px;
+    color: white;  /* Example color: blue */
+    text-decoration: none;  /* Removes underline */
+    position: relative;  /* Needed for absolute positioning of pseudo-elements */
+    display: inline-block;  /* Ensures the width is only as wide as the text */
+  }
+  
+  .gallery-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;  /* Start from the middle */
+    width: 0;  /* Start with no width */
+    height: 2px;  /* Height of the underline */
+    background-color: gold;  /* Color of the underline */
+    transition: all 0.3s ease;  /* Smooth transition for all properties */
+  }
+  
+  .gallery-link:hover::after {
+    width: 100%;  /* Full width on hover */
+    left: 0;  /* Start expanding from the left */
+  }

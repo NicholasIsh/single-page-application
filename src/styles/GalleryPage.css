@@ -1,0 +1,129 @@
+.gallery-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.gallery-header {
+  width: 100%;
+  height: 500px; /* Adjust based on your preference */
+  background-image: url('../images/GalleryBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures no overflow of pseudo-elements */
+}
+
+.gallery-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom, 
+    rgba(0, 0, 0, 1) 0%, 
+    rgba(0, 0, 0, 0.8) 25%, 
+    rgba(0, 0, 0, 0) 50%, 
+    rgba(0, 0, 0, 0) 50%, 
+    rgba(0, 0, 0, 0.5) 75%, 
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 1; /* Ensure it overlays on the background but below the content */
+}
+
+.gallery-title {
+  position: absolute;
+  color: white; /* Ensures visibility over any image */
+  font-size: 48px; /* Large text size for the title */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Text shadow for better readability */
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  width: 50%;  /* Adjust based on layout needs */
+  height: 800px;
+}
+
+.sculpture-item.small, .sculpture-item.large {
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for fading */
+}
+
+.sculpture-item.fading img {
+  opacity: 0; /* Starts invisible */
+}
+
+.sculpture-item img {
+  opacity: 1; /* Fully visible */
+  transition: opacity 0.5s ease-in-out; /* Ensure transitions on opacity change */
+}
+
+.sculpture-item {
+  text-align: center;
+  margin: 20px;
+}
+.sculpture-item.large :hover {
+  cursor: pointer;
+}
+
+.sculpture-item.small img {
+  width: 200px; /* Smaller images on the sides */
+  height: auto;
+}
+
+.sculpture-item.large img {
+  width: 300px; /* Larger image in the center */
+  height: auto;
+  
+}
+
+
+
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+}
+
+button:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.5);
+}
+
+h3 {
+  color: #eee;
+}
+
+.sculpture-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #000000, #111111);
+  color: white;
+  text-align: justify; 
+}
+
+.sculpture-info {
+  max-width: 600px;
+}
+
+.full-size-image {
+  max-width: 600px;
+  height: auto;
+  border: 1px solid #fff;  
+}

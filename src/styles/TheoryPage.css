@@ -1,0 +1,60 @@
+.theory-page {
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the background image */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns text to the left */
+    justify-content: center; /* Centers content vertically */
+    color: #bbbbbb; /* Ensures text is readable, adjust as needed */
+    padding: 8% 10%; /* Provides padding to the container */
+    box-sizing: border-box; /* Includes padding in the width and height calculations */
+  }
+  
+  
+  .theory-page h1 {
+    margin-bottom: 20px; /* Adds space below the title */
+    margin-top: 3%;
+  }
+  
+  .theory-page p {
+    text-align: justify; 
+    line-height: 1.5; 
+    max-width: 900px;
+  }
+  
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+.text-content {
+    width: 60%;  
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  .image-content {
+    margin-top: 10%;
+    width: 35%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap:5%;  
+  }
+
+.image-content img {
+    width: 100%;
+    height: auto; 
+  }
+
+  .image-content a img {
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Shows a pointer cursor on hover */
+}
+
+.image-content a:hover img {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
