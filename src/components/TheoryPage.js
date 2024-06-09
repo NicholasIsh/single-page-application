@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/TheoryPage.css';  
 
+
 function TheoryPage() {
     const imageUrl1 = "https://out4pizza.com/+/EMPTYHOUSE.png";
     const imageUrl2 = "https://out4pizza.com/+/ILLAZE.png";
@@ -107,6 +108,22 @@ function TheoryPage() {
                     <img src={imageUrl3} alt="KNOCK KNOCK from Out4Pizza" />
                 </a>
             </div>  
+        </div>
+        <div className="content">
+            <div className="text-content"> 
+            <h1>Net/Web Art Rationale</h1> 
+            <p>Inspired by out4pizza.com I set out to create a Net/Web artwork similar to those displayed on that site while adding my own twist to it and keeping it inline with my website's theme of renaissance statues. And so I chose to incorporate an image of Perseus with Medusa's head into the artwork. My primary focus was to create the moiré effect present in many of out4pizza’s posts as well as their distinctly trippy and abstract nature.</p>
+            <p>The moiré effect is what makes this into an interactive Net/Web artwork and not just an image on the internet as when the user scrolls or resizes the page the colours and patterns displayed on the artwork will change allowing the viewer the ability to interact with and change how my artwork is displayed in a unique and dynamic way. The moiré effect also relies on the monitor that it is being displayed on so one viewer may not see the same effects as another user does.</p>
+            <p>To create the moiré effect I worked in Krita where I created horizontal and vertical line patterns. I then messed around with these patterns by tilting, warping and resizing them until I got the desired effect. Then I layered each of these patterns upon each other creating the wavy pattern seen on the artwork.</p>
+            <p>For the image at the centre of the artwork, I extensively edited it in photoshop where I sharpened and pixelated much of it and then manually removed small blocks of the image whilst keeping some lines in a pattern which at first glance looks rather random and abstract. For this I did not just want to include black but a whole palette of different colours giving the artwork a “glitchy” and uniquely digital look to it. Additionally I added lines of yellow radiating out from Medusa's head to enhance the visual impact.</p>
+            <p>The title I chose for this artwork is “Autosarcophagy of Ego”. In order to understand this, I will break down these words. "Auto-" is a prefix meaning "self." "Sarcophagy" comes from the Greek words "sarx" (flesh) and "phagein" (to eat), which together mean "flesh-eating" or "cannibalism." In psychological terms, the "ego" refers to the self, particularly one's sense of identity and self-importance.</p>
+            <p>I aimed to transform the meaning of the statue of Perseus with Medusa's head to a one conveying a theme of self-destruction or self-sabotage, where one's ego is being consumed from within. Inner conflict between different aspects of one's identity, where the ego is in a constant struggle with itself, leading to a metaphorical cannibalism. In my artwork Perseus and Medusa symbolise the ego and the self respectively.</p>
+
+            <h2>References:</h2>
+            <p>Prabhu, S., 2011. Florence: Piazza della Signoria - Perseus With the Head of Medusa [Online]. Available at: https://www.flickr.com/photos/slashgod/5801193315 [Accessed: 01 June 2024].
+            </p>
+            </div>
+            
         </div>
     </div>
   );

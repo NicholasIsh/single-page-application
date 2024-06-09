@@ -16,7 +16,6 @@ function DesignPage({ blogPosts }) {
             ))}
         </div>
     )
-
 }
 
 export default DesignPage;

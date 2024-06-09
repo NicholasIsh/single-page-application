@@ -1,19 +1,28 @@
-.netart-page {
-    height: 100vh;
+  body {
+    overflow-x: auto;
+    background-color: black; /* Ensure background remains black */
+    margin: 0; /* Remove any default margin */
+  }
+
+  html {
+    height: 100%;
+  }
+
+  .netart-page {
     background-size: cover; /* Ensures the background covers the entire area */
     background-position: center; /* Centers the background image */
     background-color: black;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligns text to the left */
+    align-items: center; /* Aligns text to the left */
     justify-content: center; /* Centers content vertically */
     color: #bbbbbb; /* Ensures text is readable, adjust as needed */
     padding: 8% 10%; /* Provides padding to the container */
-    box-sizing: border-box; /* Includes padding in the width and height calculations */
   }
   
   
   .netart-page h1 {
+    font-size: 50px;
     margin-bottom: 20px; /* Adds space below the title */
     margin-top: 3%;
   }
@@ -23,4 +32,18 @@
     line-height: 1.5; 
     max-width: 900px;
   }
-  
+
+
+  .netart-image {
+    height: 1500px; /* Maintain aspect ratio */
+    width: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow for better visibility */
+    margin-top: 20px; /* Adds space above the image */
+}
+
+@media (max-width: 1130px) {
+  .netart-page h1 {
+    font-size: 30px;
+    
+  }
+}
