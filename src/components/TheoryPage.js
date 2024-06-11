@@ -1,19 +1,25 @@
 import React from 'react';
 import '../styles/TheoryPage.css';  
 
-
+/**
+ * TheoryPage component displays an essay on Net/Web Art and a rationale for the user's own Net/Web artwork.
+ * It includes text content and images related to the essay and rationale.
+ */
 function TheoryPage() {
+    // URLs for out4pizza images used on the page
     const imageUrl1 = "https://out4pizza.com/+/EMPTYHOUSE.png";
     const imageUrl2 = "https://out4pizza.com/+/ILLAZE.png";
     const imageUrl3 = "http://out4pizza.com/+/REDROOFINN.png";
     const out4pizzalink = "https://out4pizza.com/FEED/";
 
-  return (
-    <div className="theory-page">
-        <div className="content">
-            <div className="text-content">
-                <h1>Critical Analysis Essay on Net/Web Art</h1>  
-                <p>The modern internet of our age has emerged not just as a tool for communication, a space for information and art but has become a medium of artistic expression.
+    return (
+        <div className="theory-page">
+            {/* Section for the critical analysis essay */}
+            <div className="content">
+                <div className="text-content">
+                    <h1>Critical Analysis Essay on Net/Web Art</h1>  
+                    {/* Main essay content */}
+                    <p>The modern internet of our age has emerged not just as a tool for communication, a space for information and art but has become a medium of artistic expression.
                         Net/web art utilises the internet as its canvas, gallery and medium which allows for a unique perspective on how contemporary art has transcended traditional 
                         boundaries and has the ability to engage with a global audience so long as they have an internet connection. I intend to explore the nature of the internet as 
                         an artistic medium through a focused analysis of the archive of artworks “out_4_pizza” hosted on out4pizza.com created by Laura Brothers using various theoretical 
@@ -83,6 +89,7 @@ function TheoryPage() {
                         interactive, dynamic, and participatory art experiences, which displays a significant evolution in how art is both viewed and valued.
                     </p>
 
+                    {/* References for the essay */}
                     <h2>References:</h2>
                     <p>
                     Brothers, L. (n.d.). LAURA BROTHERS. [online] out4pizza.com. Available at: https://out4pizza.com/ [Accessed 26 Apr. 2024]. <br></br>
@@ -96,37 +103,41 @@ function TheoryPage() {
                     Smith, G. and Leymarie, F.F. (2017). The Machine as Artist: An Introduction. Arts, 6(4), p.5. doi:https://doi.org/10.3390/arts6020005.
 
                     </p>
-            </div>   
-            <div className="image-content">
-                <a href={out4pizzalink} target="_blank" rel="noopener noreferrer">
-                    <img src={imageUrl1} alt="EMPTYHOUSE from Out4Pizza" />
-                </a>
-                <a href={out4pizzalink} target="_blank" rel="noopener noreferrer">
-                    <img src={imageUrl2} alt="ILLAZE from Out4Pizza" />
-                </a>
-                <a href={out4pizzalink} target="_blank" rel="noopener noreferrer">
-                    <img src={imageUrl3} alt="KNOCK KNOCK from Out4Pizza" />
-                </a>
-            </div>  
-        </div>
-        <div className="content">
-            <div className="text-content"> 
-            <h1>Net/Web Art Rationale</h1> 
-            <p>Inspired by out4pizza.com I set out to create a Net/Web artwork similar to those displayed on that site while adding my own twist to it and keeping it inline with my website's theme of renaissance statues. And so I chose to incorporate an image of Perseus with Medusa's head into the artwork. My primary focus was to create the moiré effect present in many of out4pizza’s posts as well as their distinctly trippy and abstract nature.</p>
-            <p>The moiré effect is what makes this into an interactive Net/Web artwork and not just an image on the internet as when the user scrolls or resizes the page the colours and patterns displayed on the artwork will change allowing the viewer the ability to interact with and change how my artwork is displayed in a unique and dynamic way. The moiré effect also relies on the monitor that it is being displayed on so one viewer may not see the same effects as another user does.</p>
-            <p>To create the moiré effect I worked in Krita where I created horizontal and vertical line patterns. I then messed around with these patterns by tilting, warping and resizing them until I got the desired effect. Then I layered each of these patterns upon each other creating the wavy pattern seen on the artwork.</p>
-            <p>For the image at the centre of the artwork, I extensively edited it in photoshop where I sharpened and pixelated much of it and then manually removed small blocks of the image whilst keeping some lines in a pattern which at first glance looks rather random and abstract. For this I did not just want to include black but a whole palette of different colours giving the artwork a “glitchy” and uniquely digital look to it. Additionally I added lines of yellow radiating out from Medusa's head to enhance the visual impact.</p>
-            <p>The title I chose for this artwork is “Autosarcophagy of Ego”. In order to understand this, I will break down these words. "Auto-" is a prefix meaning "self." "Sarcophagy" comes from the Greek words "sarx" (flesh) and "phagein" (to eat), which together mean "flesh-eating" or "cannibalism." In psychological terms, the "ego" refers to the self, particularly one's sense of identity and self-importance.</p>
-            <p>I aimed to transform the meaning of the statue of Perseus with Medusa's head to a one conveying a theme of self-destruction or self-sabotage, where one's ego is being consumed from within. Inner conflict between different aspects of one's identity, where the ego is in a constant struggle with itself, leading to a metaphorical cannibalism. In my artwork Perseus and Medusa symbolise the ego and the self respectively.</p>
-
-            <h2>References:</h2>
-            <p>Prabhu, S., 2011. Florence: Piazza della Signoria - Perseus With the Head of Medusa [Online]. Available at: https://www.flickr.com/photos/slashgod/5801193315 [Accessed: 01 June 2024].
-            </p>
+                </div>   
+                {/* Images related to the essay */}
+                <div className="image-content">
+                    <a href={out4pizzalink} target="_blank" rel="noopener noreferrer">
+                        <img src={imageUrl1} alt="EMPTYHOUSE from Out4Pizza" />
+                    </a>
+                    <a href={out4pizzalink} target="_blank" rel="noopener noreferrer">
+                        <img src={imageUrl2} alt="ILLAZE from Out4Pizza" />
+                    </a>
+                    <a href={out4pizzalink} target="_blank" rel="noopener noreferrer">
+                        <img src={imageUrl3} alt="KNOCK KNOCK from Out4Pizza" />
+                    </a>
+                </div>  
             </div>
-            
+
+            {/* Section for the Net/Web Art rationale */}
+            <div className="content">
+                <div className="text-content"> 
+                    <h1>Net/Web Art Rationale</h1> 
+                    {/* Rationale content */}
+                    <p>Inspired by out4pizza.com I set out to create a Net/Web artwork similar to those displayed on that site while adding my own twist to it and keeping it inline with my website's theme of renaissance statues. And so I chose to incorporate an image of Perseus with Medusa's head into the artwork. My primary focus was to create the moiré effect present in many of out4pizza’s posts as well as their distinctly trippy and abstract nature.</p>
+                    <p>The moiré effect is what makes this into an interactive Net/Web artwork and not just an image on the internet as when the user scrolls or resizes the page the colours and patterns displayed on the artwork will change allowing the viewer the ability to interact with and change how my artwork is displayed in a unique and dynamic way. The moiré effect also relies on the monitor that it is being displayed on so one viewer may not see the same effects as another user does.</p>
+                    <p>To create the moiré effect I worked in Krita where I created horizontal and vertical line patterns. I then messed around with these patterns by tilting, warping and resizing them until I got the desired effect. Then I layered each of these patterns upon each other creating the wavy pattern seen on the artwork.</p>
+                    <p>For the image at the centre of the artwork, I extensively edited it in photoshop where I sharpened and pixelated much of it and then manually removed small blocks of the image whilst keeping some lines in a pattern which at first glance looks rather random and abstract. For this I did not just want to include black but a whole palette of different colours giving the artwork a “glitchy” and uniquely digital look to it. Additionally I added lines of yellow radiating out from Medusa's head to enhance the visual impact.</p>
+                    <p>The title I chose for this artwork is “Autosarcophagy of Ego”. In order to understand this, I will break down these words. "Auto-" is a prefix meaning "self." "Sarcophagy" comes from the Greek words "sarx" (flesh) and "phagein" (to eat), which together mean "flesh-eating" or "cannibalism." In psychological terms, the "ego" refers to the self, particularly one's sense of identity and self-importance.</p>
+                    <p>I aimed to transform the meaning of the statue of Perseus with Medusa's head to a one conveying a theme of self-destruction or self-sabotage, where one's ego is being consumed from within. Inner conflict between different aspects of one's identity, where the ego is in a constant struggle with itself, leading to a metaphorical cannibalism. In my artwork Perseus and Medusa symbolise the ego and the self respectively.</p>
+
+                    {/* References for the rationale */}
+                    <h2>References:</h2>
+                    <p>Prabhu, S., 2011. Florence: Piazza della Signoria - Perseus With the Head of Medusa [Online]. Available at: https://www.flickr.com/photos/slashgod/5801193315 [Accessed: 01 June 2024].
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 
 export default TheoryPage;

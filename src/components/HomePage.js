@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import '../styles/HomePage.css';
 
+/**
+ * HomePage component displays the main introduction to the Renaissance Sculpture Gallery.
+ * It includes a title, introductory paragraphs, and a link to the gallery page.
+ */
 function HomePage () {
   return (
     <div className="home"> 
@@ -20,6 +24,7 @@ function HomePage () {
         Their works are not just celebrations of human beauty and emotion but are also seen as benchmarks of technical prowess in the art of sculpting.</p>
       <p>From the David of Michelangelo to the Gates of Paradise by Ghiberti, Renaissance sculptures offer a window into the soul of an age that viewed art as the highest expression of human genius.</p>
       <div className="view-gallery">
+         {/* Link to the gallery page for easy access after reading the information about the renaissance*/}
         <Link to="/gallery" className="gallery-link">View the Gallery</Link>  
       </div>
     </div>

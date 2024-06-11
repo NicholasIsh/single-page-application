@@ -13,7 +13,7 @@
   }
 
   .navbar-fixed {
-    position:absolute; /* Only fixed when on the NetArtPage */
+    position:absolute; /* Only absolute when on the NetArtPage */
     top: 0;
   }
   .navbar-logo img {
