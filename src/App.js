@@ -7,6 +7,7 @@ import TheoryPage from './components/TheoryPage';
 import NetArtPage from './components/NetArtPage';
 import DesignPage from './components/DesignPage';
 import BlogPage from './components/BlogPage';
+import PageNotFound from './components/PageNotFound';
 import './App.css';
 import sculptures from './data/sculptures';  // Importing sculptures data
 import blogs from './data/blogs';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/netArt" element={<NetArtPage />} />
           <Route path="/design" element={<DesignPage designContent={designContent} wireframes={wireframes}/>} />
           <Route path="/blog" element={<BlogPage blogPosts={blogs}/>} />
+          <Route component={PageNotFound} /> 
         </Routes>
       </div>
     </Router>

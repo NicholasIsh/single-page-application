@@ -3,6 +3,7 @@ import GalleryWireframe from '../images/GalleryWireframe.png';
 import DesignWireframe from '../images/DesignWireframe.png';
 import BlogPageWireframe from '../images/BlogWireframe.png';
 import TheoryPageWireframe from '../images/TheoryWireframe.png';
+import NetArtPageWireframe from '../images/NetArtWireframe.png';
 
 const wireframes = [
     {
@@ -24,6 +25,10 @@ const wireframes = [
     {
         title: "Theory Page",
         image: TheoryPageWireframe,
+    },
+    {
+        title: "Net Art Page",
+        image: NetArtPageWireframe,
     }
 ];
 
